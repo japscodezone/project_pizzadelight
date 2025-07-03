@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Delight - Philippines</title>
+		<meta charset="utf-8" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="body">
+		<!--The Header Section-->
+		<header class="mainheader">
+			<img src="img/pizzaheader.jpg" alt="Pizza Header" />
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--The Content Section-->
+		<div class="mainContent">
+			<div class="content">
+			<article class="topcontent">
+				<header>
+					<h2>SIGN UP TO EARN REWARDS WHEN YOU ORDER ONLINE</h2>
+				</header>
+				
+				<content>
+					<small>Fields with asterisk (<span style="color:#b22222;">*</span>) are required.</small>
+					  <form name="register" action="process_register.html" action="post">
+						<fieldset>
+						<legend style="color: maroon; font-weight: bold;">REGISTRATION FORM</legend>
+						<table class="register">
+							<tr>
+								<td>Last Name: <span style="color:#b22222;">*</span>
+									<input type="text" name="lastName" size="20" maxlength="25" required autofocus />
+								</td>
+								<td>First Name: <span style="color:#b22222;">*</span>
+									<input type="text" name="firstName" size="20" maxlength="25" required />
+								</td>
+								<td>Middle Initial: <span style="color:#b22222;">*</span><br />
+									<input type="text" name="middleInitial" size="5" maxlength="5" required />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">Address: <span style="color:#b22222;">*</span>
+									<input type="text" name="address" size="70" maxlength="60" required />
+								</td>
+							</tr>
+							<tr>
+								<td>Birthdate:
+									<input type="date" name="date" />
+								</td>
+								<td>Gender:<br />
+									<input type="radio" name="gender" value="Male" /><span class="gender-adjust">Male</span>
+									<input type="radio" name="gender" value="Female" /><span class="gender-adjust">Female</span>
+								</td>
+								<td>Age:<br />
+									<select name="age">
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Email: <span style="color:#b22222;">*</span>
+									<input type="email" name="email" required />
+								</td>
+								<td>Password: <span style="color:#b22222;">*</span>
+									<input type="password" name="password1" required />
+								</td>
+								<td>Re-enter Password: <span style="color:#b22222;">*</span>
+									<input type="password" name="password2" required />
+								</td>
+							</tr>
+						</table>
+						<br />
+						<input type="checkbox" name="agreement" required>I agree with the terms and conditions.<br><br>
+						<input type="reset" name="reset" value="CLEAR" style="margin-right:5px;"/>
+						<input type="submit" name="submit" value="REGISTER" />
+						</fieldset>
+					</form>
+					
+					<form name="order" action="#" method="post"> 
+					  <fieldset>
+					    <legend style="color: maroon; font-weight: bold;">ORDER FORM</legend>
+						  <label>Pizza Flavor:</label>
+						  <select name="flavor">
+						    <option value="cheese">Cheese</option>
+							<option value="hawaiian">Hawaiian</option>
+							<option value="bacon">Bacon</option>
+						  </select>
+						  <br>
+						  <label>Pizza Size:</label>
+						  <select name="size">
+						    <option value="small">Small (6")</option>
+							<option value="medium">Medium (9")</option>
+							<option value="large">Large (12")</option>
+						  </select>
+						  <br>
+						  <label>How many?</label>
+						  <input type="number" name="howmany">
+						  <br>
+						  <label>Notes:</label><br>
+						  <textarea name="notes" rows="10" cols="40" placeholder="Enter additional information"></textarea>
+						<br><input type="submit" name="submit" value="ORDER" />
+					  </fieldset>
+					</form>
+				
+				</content>
+			</article>
+			</div>
+		</div>
+		<!--The Sidebar-->
+		<aside class="top-sidebar">
+			<article>
+				<a href="#" title="Visit Home Page"><img src="img/pizzalogo.jpg" alt="Pizza Logo" /></a>
+			</article>
+		</aside>
+		
+		<aside class="bottom-sidebar">
+			<article>
+				<img src="img/cheese.png" alt="Cheese Pizza" width="280" height="200" />
+				<h3>Three Cheese Pizza</h3>
+				<p>Topped with mozzarella, parmesan, and romano and sprinkled with basil.</p>
+			</article>
+		</aside>
+		<!--Footer Section-->
+		<footer class="mainFooter">
+			<p>Copyright &copy; 2018 <strong>Pizza Delight Philippines, Inc</strong>.</p>
+		</footer>
+	</body>
+</html>
